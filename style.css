@@ -53,7 +53,7 @@ h1 {
 	font-size: clamp(2rem, 3vw, 3em);
 }
 
-h1:hover {
+.book-title:hover {
 	cursor: pointer;
 	pointer-events: all;
 	color: rgb(24, 123, 221);
