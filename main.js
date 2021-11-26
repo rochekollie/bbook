@@ -1,9 +1,52 @@
-let bookTitle = document.getElementsByTagName('h1')[0];
+// Hide element by id
+const hide = (id) => {
+	document.getElementById(id).style.display = 'none';
+}
 
-bookTitle.addEventListener('mouseover', function () {
-	bookTitle.classList.add('book-title');
+// Show element by id
+const display = (id) => {
+	document.getElementById(id).style.display = 'block';
+}
+
+const toggleMenu = () => {
+	if (document.body.clientWidth < 768)
+	{
+		hide('site-menu');
+	} else
+	{
+		display('site-menu');
+	}
+}
+
+//hide the the menu when window loads
+window.onload = function () {
+	toggleMenu();
+};
+
+//Hide the mobile menu when window is resize
+window.addEventListener('resize', function () {
+	toggleMenu();
+	let icon = document.getElementById('menu-icon');
+	icon.innerText = 'menu';
 });
 
-bookTitle.addEventListener('click', function () {
-	window.location.href = 'https://www.google.com/books/edition/Why_Nations_Fail/yIV_NMDDIvYC?hl=en';
-});
+
+//Toggle the menu on click
+const swapMenuIcon = (id, target) => {
+	document.getElementById(id).addEventListener('click', function () {
+		let newTarget = document.getElementById(target);
+		let icon = document.getElementById('menu-icon');
+		if (icon.innerText === 'menu')
+		{
+			icon.innerText = 'menu_open';
+			newTarget.style.display = 'block';
+		} else
+		{
+			icon.innerText = 'menu';
+			newTarget.style.display = 'none';
+			newTarget.classList.add('show-menu');
+		}
+	});
+}
+
+swapMenuIcon('menu-icon', 'site-menu');

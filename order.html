@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Home | Why Nations Fail</title>
+		<title>Order | Why Nations Fail</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description"
@@ -32,7 +32,8 @@
 			<!-- site menu	-->
 			<nav id="site-menu">
 				<ul>
-					<li class="desktop-only-elements"><a class="btn" href="order.html">Order Now</a>
+					<li class="desktop-only-elements"><a class="btn"
+							href="order.html">Order Now</a>
 					</li>
 					<li><a href="./">Home</a></li>
 					<li><a href="overview.html">Overview</a></li>
@@ -46,32 +47,39 @@
 			<a class="mobile-only-elements btn" href="order.html">Order now</a>
 		</header>
 		<main>
-			<div id="hero-wrapper">
-				<div id="mobile-content-wrapper">
-					<h1 class="book-title">
-						<span class="main-title">Why Nations Fail:</span> The
-						Origins of<br>
-						Power, Prosperity, and Poverty
-					</h1>
-					<img class="mobile-only-elements"
-						src="/images/external-content.duckduckgo.com.jpg"
-						alt="">
-					<a class="mobile-only-elements btn" href="overview.html">Learn more</a>
-					<p>
-						Why Nations Fail: The Origins of
-						Power, Prosperity, and Poverty, first published
-						in 2012, is a book by economists Daron Acemoglu and
-						James
-						Robinson. It
-						summarizes and popularizes previous research by the
-						authors
-						and many other
-						scientists.
-					</p>
-					<a class="desktop-only-elements btn" href="overview.html">Learn more</a>
-				</div>
-				<img class="desktop-only-elements"
-					src="/images/external-content.duckduckgo.com.jpg" alt="">
+			<div id="order-page" class="generic-page">
+				<h1>Get Your Copy Now!</h1>
+				<img src="/images/external-content.duckduckgo.com.jpg" alt="">
+				<p class="price">$19.99</p>
+				<form id="order-form" action="confirm-order.html">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" required>
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required>
+					<label for="address">Address:</label>
+					<input type="text" name="address" id="address" required>
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city" required>
+					<label for="state">State:</label>
+					<input type="text" name="state" id="state" required>
+					<label for="zip">Zip:</label>
+					<input type="text" name="zip" id="zip" required>
+					<label for="country">Country:</label>
+					<input type="text" name="country" id="country" required>
+					<label for="phone">Phone:</label>
+					<input type="text" name="phone" id="phone" required>
+					<label for="card-number">Card Number:</label>
+					<input type="text" name="card-number" id="card-number" required>
+					<label for="card-name">Card Name:</label>
+					<input type="text" name="card-name" id="card-name" required>
+					<label for="card-expiration">Card Expiration:</label>
+					<input type="text" name="card-expiration" id="card-expiration" required>
+					<label for="card-cvv">Card CVV:</label>
+					<input type="text" name="card-cvv" id="card-cvv" required>
+					<label for="quantity">QTY <span class="price">($17.99 each)</span>:</label>
+					<input type="number" name="quantity" id="quantity" min="1" max="10" required>
+					<input class="btn" type="submit" value="Place Order">
+				</form>
 			</div>
 		</main>
 		<footer>
@@ -103,10 +111,3 @@
 
 </html>
 <script src="main.js" defer></script>
-
-<!-- https://www.facebook.com/brand/resources/facebookapp/logo -->
-<!-- https://about.twitter.com/en/who-we-are/brand-toolkit -->
-<!-- https://www.facebook.com/brand/resources/instagram/instagram-brand -->
-<!-- https://www.facebook.com/brand/resources/whatsapp/whatsapp-brand -->
-<!-- https://business.pinterest.com/en/brand-guidelines/ -->
-<!-- https://brand.linkedin.com/downloads -->
