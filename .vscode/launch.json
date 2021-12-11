@@ -11,6 +11,12 @@
 			"name": "http://127.0.0.1:3000/reviews.html",
 			"request": "launch",
 			"url": "http://127.0.0.1:3000/reviews.html"
+		},
+		{
+			"type": "pwa-chrome",
+			"name": "http://127.0.0.1:3000/overview.html",
+			"request": "launch",
+			"url": "http://127.0.0.1:3000/overview.html"
 		}
 	]
 }
