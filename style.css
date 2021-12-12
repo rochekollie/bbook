@@ -746,8 +746,8 @@ article h2 {
 }
 
 #tour-table {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
+	/* -ms-overflow-style: none; */
+	/* scrollbar-width: none;  */
 }
 
 table {
@@ -1015,3 +1015,6 @@ form textarea:focus {
 		gap: calc(1.5rem + 3vw);
 	}
 }
+
+
+/* IE and Edge */
